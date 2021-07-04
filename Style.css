@@ -1,0 +1,26 @@
+@import url(./CSS/Home.css);
+@import url(./CSS/AboutMe.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+:root{
+    --header-height:3rem;
+    --hue-color:250;
+    --body-color:hsl(var(--hue-color), 60%, 95%);
+    --font-title:'Poppins', sans-serif;
+    --icon-size:24px;
+    --btn-bg:#C9C4F1;
+    --text-color-v1:#000;
+    --text-color-v2:#fff;
+    --header-color:#C9C4F1;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-color);
+    font-family: var(--font-title);
+    overflow-x: hidden;
+}

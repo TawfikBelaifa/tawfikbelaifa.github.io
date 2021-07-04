@@ -1,0 +1,156 @@
+
+.aboutMe{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleAB{
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    width: 45vw;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 20px;
+}
+
+.titleAB h1{
+    margin: 0;
+
+}
+
+.containAbout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.containImg{
+    position: relative;
+}
+
+.containImg img{
+    transition: all 1s;
+    height: 280px;
+    width: 280px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    cursor: pointer;
+    border: none;
+}
+
+.containImg .ensitech{
+    position: absolute;
+    top: 143px;
+    left: 150px;
+    z-index: 0;
+}
+
+.containImg .ensup{
+    position: absolute;
+    top: 143px;
+    left: -150px;
+    z-index: 0;
+}
+
+
+
+.containImg .ensitech:hover, .containImg .ensup:hover, .containImg .aswo:hover{
+    transform: scale(1.2);
+}
+
+.containText{
+    width: 345px;
+}
+
+.CV-Down a{
+    text-decoration: none;
+    color: white;
+}
+
+.CV-Down{
+    padding: 20px 10px;
+    background-color: var(--btn-bg);
+    width: auto;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.presentation{
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+
+.level{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.level h1{
+    margin: 0;
+}
+
+.level .langage{
+    text-align: center;
+}
+
+.langage span{
+    font-size: 12px;
+    color: gray;
+    word-wrap: break-word;
+}
+
+.containImg{
+    margin-top: -83px;
+}
+
+@media screen and (max-width: 1130px) {
+    .containAbout{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .containText{
+        margin-top: 160px;
+    }
+
+    .containImg{
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .containImg .ensitech{
+        position: static;
+
+    }
+    .containImg .ensup{
+        position: static;
+
+    }
+
+    .containImg{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containText {
+        margin-top: 40px;
+    }
+
+}
