@@ -1,0 +1,147 @@
+
+.Jauge{
+    width: 340px;
+    height: 8.5px;
+    background-color: #C9C4F1;
+    margin-bottom: 10px;
+}
+
+.Uhkj{
+    background-color: #001429;
+}
+
+.pourcent-JS{
+    height: 100%;
+    width: 60%;
+}
+.prc{
+    font-size: 10px;
+}
+
+.pourcent-html5{
+    height: 100%;
+    width: 90%;
+}
+
+.pourcent-css3{
+    height: 100%;
+    width: 90%;
+
+}
+
+.pourcent-jquery{
+    height: 100%;
+    width: 75%;
+}
+
+.pourcent-php{
+    height: 100%;
+    width: 45%;
+
+}
+
+.pourcent-java{
+    height: 100%;
+    width: 30%;
+
+}
+
+.pourcent-sql{
+    height: 100%;
+    width: 80%;
+
+}
+
+.pourcent-c{
+    height: 100%;
+    width: 30%;
+
+}
+
+.pourcent-vue{
+    height: 100%;
+    width: 58%;
+
+}
+
+.pourcent-symfony{
+    height: 100%;
+    width: 30%;
+
+}
+
+.pourcent-mysql{
+    height: 100%;
+    width: 60%;
+
+}
+
+.pourcent-server{
+    height: 100%;
+    width: 58%;
+
+}
+
+.pourcent-phpmyadmin{
+    height: 100%;
+    width: 90%;
+
+}
+
+.pourcent-oracle{
+    height: 100%;
+    width: 62%;
+
+}
+
+
+
+.pourcent-xamp{
+    height: 100%;
+    width: 80%;
+
+}
+
+.pourcent-vsc{
+    height: 100%;
+    width: 80%;
+
+}
+
+.pourcent-git{
+    height: 100%;
+    width: 48%;
+
+}
+
+.pourcent-gantt{
+    height: 100%;
+    width: 40%;
+
+}
+
+.pourcent-adobe{
+    height: 100%;
+    width: 55%;
+
+}
+
+.pourcent-office{
+    height: 100%;
+    width: 90%;
+
+}
+
+.pourcent-wms{
+    height: 100%;
+    width: 40%;
+
+}
+
+
+
+
+.rotation{
+    transition: .7s all; 
+    transform: rotate(180deg);
+}

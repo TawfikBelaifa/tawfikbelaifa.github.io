@@ -1,7 +1,3 @@
-
-body{
-    overflow-x: hidden;
-}
  
 header{
     display: flex;
@@ -27,7 +23,18 @@ header{
     display: inline;
     list-style: none;
     padding: 10px 20px;
+    cursor: pointer;
 }
+
+.UL-navig li:hover{
+    opacity: .5;
+}
+
+.UL-navig a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 .home{
     display: flex;
