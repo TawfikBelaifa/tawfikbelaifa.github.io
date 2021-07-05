@@ -145,3 +145,8 @@
     transition: .7s all; 
     transform: rotate(180deg);
 }
+
+.InverseRotate{
+    transition: .7s all; 
+    transform: rotate(0deg);
+}

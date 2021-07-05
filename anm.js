@@ -8,11 +8,26 @@ $(document).ready(function() {
    })
 
    $('.title-LS').on('click', function(){
-       $('.rotation').toggleClass('rotation')
-       $('.affiche').toggleClass('affiche')
        lang = $(this).attr('data-langage')
        id = $(this).attr('id')
-       $('#__'+id).addClass('rotation')
+       if($('#__'+id).hasClass('rotation')){
+            $('#__'+id).removeClass('rotation')
+            $('#__'+id).addClass('InverseRotate')
+
+       }else{
+            $('#__'+id).addClass('rotation')
+            $('#__'+id).removeClass('InverseRotate')
+       }
        $('.'+lang).toggleClass('affiche')
    })
+
+   $(window).scroll(function() {
+        var hT = $('.en-tete').offset().top
+        if (hT > 10){
+            $('.en-tete').addClass('addBox-shadow')
+        }
+        if(hT < 10 ){
+            $('.en-tete').removeClass('addBox-shadow')
+        }
+    });
 })
