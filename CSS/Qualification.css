@@ -27,7 +27,7 @@
 }
 
 .head-QLF button{
-    padding: 10px 50px;
+    padding: 10px 0px;
     background-color: transparent;
     border: none;
     color: #000;
@@ -136,15 +136,15 @@
 
 @media screen and (max-width: 590px) {
     .mainQualification::before{
-        top: 155px;
+        top: 129px;
     }
 
     #p2{
-        top: 263px;
+        top: 236px;
     }
 
     #p3{
-        top: 358px;
+        top: 331px;
     }
 
 }
@@ -155,11 +155,26 @@
     }
 
     #p2{
-        top: 263px;
+        top: 236px;
     }
 
     #p3{
-        top: 399px;
+        top: 374px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .mainQualification::before{
+        height: 401px;
+    }
+
+    #p2{
+        top: 236px;
+    }
+
+    #p3{
+        top: 395px;
     }
 
 }
