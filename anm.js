@@ -1,10 +1,10 @@
-$(document).ready(function() {
-    $('.UL-navig a').click(function(e){
-       e.preventDefault();
-       $id = $(this).attr('href');
-       $('body,html').animate({
-       scrollTop: $($id).offset().top -20
-       }, 750)
+    $(document).ready(function() {
+        $('.UL-navig a').click(function(e){
+        e.preventDefault();
+        $id = $(this).attr('href');
+        $('body,html').animate({
+        scrollTop: $($id).offset().top -20
+        }, 750)
    })
 
    $('.title-LS').on('click', function(){
@@ -13,8 +13,7 @@ $(document).ready(function() {
        if($('#__'+id).hasClass('rotation')){
             $('#__'+id).removeClass('rotation')
             $('#__'+id).addClass('InverseRotate')
-
-       }else{
+        }else{
             $('#__'+id).addClass('rotation')
             $('#__'+id).removeClass('InverseRotate')
        }
@@ -30,4 +29,11 @@ $(document).ready(function() {
             $('.en-tete').removeClass('addBox-shadow')
         }
     });
+
+    $('.Btn-PersonJ').on('click', function(){
+        $('.opacBtn').toggleClass('opacBtn')
+        $(this).toggleClass('opacBtn')
+        $('.afficheQualPart').removeClass('afficheQualPart')
+        $('#_'+$(this).attr('id')).addClass('afficheQualPart')
+    })
 })

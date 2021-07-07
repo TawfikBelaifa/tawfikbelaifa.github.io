@@ -34,12 +34,22 @@
     cursor: pointer;
     font-family: var(--font-title);
     font-size: 18px;
+    transition: .5s all;
+}
+
+.head-QLF button:hover{
+    color: #000;
+    opacity: .5;
+}
+
+.opacBtn{
+    opacity: .5;
 }
 
 .Qlf-jrn{
     padding: 5px;
     margin-top: 50px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
 }
@@ -110,7 +120,11 @@
     transform: translate(-50%);
 }
 
-.BriefSI{
+.afficheQualPart {
+    display: grid;
+}
+
+.BriefSI, .hideQualPart{
     display: none;
 }
 
@@ -160,6 +174,13 @@
 
     #p3{
         top: 374px;
+    }
+
+    .SI-complete{
+        display: none;
+    }
+    .BriefSI{
+        display: inline-flex;
     }
 
 }
