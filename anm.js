@@ -1,11 +1,21 @@
     $(document).ready(function() {
         $('.UL-navig a').click(function(e){
-        e.preventDefault();
-        $id = $(this).attr('href');
-        $('body,html').animate({
-        scrollTop: $($id).offset().top -20
-        }, 750)
-   })
+            e.preventDefault();
+            $id = $(this).attr('href');
+            $('body,html').animate({
+            scrollTop: $($id).offset().top -20
+            }, 750)       
+        })
+
+        $('.UL-navig-RWD a').click(function(e){
+            e.preventDefault();
+            $id = $(this).attr('href');
+            $('body,html').animate({
+            scrollTop: $($id).offset().top -20
+            }, 750)       
+        })
+
+    
 
    $('.title-LS').on('click', function(){
        lang = $(this).attr('data-langage')
@@ -35,5 +45,15 @@
         $(this).toggleClass('opacBtn')
         $('.afficheQualPart').removeClass('afficheQualPart')
         $('#_'+$(this).attr('id')).addClass('afficheQualPart')
+    })
+
+    $('.fa-bars').on('click', function(){
+        if(($('.cGYg').hasClass('afficheNavBar'))){
+            $('.cGYg').removeClass('afficheNavBar')
+        }
+        else{
+            $('.cGYg').addClass('cGYg afficheNavBar')
+        }
+        
     })
 })

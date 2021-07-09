@@ -7,13 +7,35 @@
     height: 100vh;
     position: relative;
 }
-
-.mainQualification::before{
+.__Schoole::before{
     position: absolute;
     top: 110px;
+    left: 50%;
     text-align: center;
     content: '';
-    height: 273px;
+    height: 193px;
+    width: .5px;
+    background-color: #000;
+}
+
+.__Work::before{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    text-align: center;
+    content: '';
+    height:94px;
+    width: .5px;
+    background-color: #000;
+}
+
+.__ProjectUniversity::before{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    text-align: center;
+    content: '';
+    height: 173px;
     width: .5px;
     background-color: #000;
 }
@@ -60,8 +82,8 @@
 }
 
 .Hygfy:nth-of-type(2n){
-    margin-top: 112px;
-    margin-bottom: 17px;
+    margin-top: 85px;
+    margin-bottom: 4px;
     align-items: flex-start;
 }
 
@@ -109,15 +131,80 @@
 }
 
 #p2{
-    top: 219px;
+    top: 191px;
     left: 50%;
     transform: translate(-50%);
 }
 
 #p3{
-    top: 313px;
+    top:275px;
     left: 50%;
     transform: translate(-50%);
+}
+
+.__Schoole #p2{
+    top: 211px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.__Schoole #p3{
+    top: 292px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.__Schoole .Hygfy:nth-of-type(2n){
+    margin-top: 103px;
+    margin-bottom: 4px;
+    align-items: flex-start;
+}
+
+
+.cGYg{
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 85px;
+}
+
+#afficheNavBar{
+    display: flex;
+    animation:1s animNB ;
+}
+
+.UL-navig-RWD{
+    z-index: 10;
+    list-style: none;
+    width: 100vw;
+    height: calc(100vh - 58px);
+    padding: 0;
+    margin: 0;
+}
+
+.UL-navig-RWD a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 60px;
+}
+
+
+.UL-navig-RWD li{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all;
+    cursor: pointer;
+
+}
+
+.UL-navig-RWD li:hover{
+    background-color: #C9C4F1;
+
 }
 
 .afficheQualPart {
@@ -128,6 +215,15 @@
     display: none;
 }
 
+@keyframes animNB {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 @media screen and (max-width: 664px) {
     .head-QLF button{
         display: flex;
@@ -135,15 +231,39 @@
         align-items: center;
     }
     .mainQualification::before{
-        top: 138px;
+        /*top: 138px;*/
     }
 
-    #p2{
-        top: 236px;
+    .__Schoole .Hygfy:nth-child(2n+1){
+        margin-top: -15px;
     }
 
-    #p3{
-        top: 331px;
+    .__Schoole #p1{
+        margin-top: -12px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #p1{
+        margin-top: -12px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .__Schoole .Hygfy:nth-of-type(2n) {
+        margin-top: 87px;
+        margin-bottom: 16px;
+        align-items: flex-start;
+    }
+    .Hygfy:nth-child(2n+1) {
+        text-align: right;
+        margin-top: -16px;
+    }
+
+    .Hygfy:nth-of-type(2n) {
+        margin-top: 68px;
+        margin-bottom: 21px;
+        align-items: flex-start;
     }
 
 }
@@ -154,13 +274,16 @@
     }
 
     #p2{
-        top: 236px;
+        top: 191px;
     }
 
     #p3{
-        top: 331px;
+        top: 299px;
     }
 
+    .__ProjectUniversity::before{
+        height: 201px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -168,12 +291,54 @@
         height: 357px;
     }
 
-    #p2{
-        top: 236px;
+    .__Schoole .Hygfy:nth-of-type(2n) {
+        margin-top: 91px;
+        margin-bottom: 20px;
+        align-items: flex-start;
     }
 
-    #p3{
-        top: 374px;
+    .__Schoole #p2 {
+        top: 216px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .__Schoole #p3 {
+        top: 339px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .__Schoole::before{
+        height: 242px;
+    }
+
+    .Hygfy:nth-of-type(2n) {
+        margin-top: 83px;
+    }
+
+    #p2 {
+        top: 207px;
+    }
+
+    .__Work::before{
+        height: 103px;
+    }
+
+    .__ProjectUniversity  .Hygfy:nth-of-type(2n) {
+        margin-top: 101px;
+    }
+
+    .__ProjectUniversity  #p2 {
+        top: 225px;
+    }
+
+    .__ProjectUniversity  #p3 {
+        top: 350px;
+    }
+
+    .__ProjectUniversity::before {
+        height: 250px;
     }
 
     .SI-complete{
@@ -185,17 +350,13 @@
 
 }
 
-@media screen and (max-width: 330px) {
-    .mainQualification::before{
-        height: 401px;
+@media screen and (max-width: 373px) {
+    .__ProjectUniversity::before {
+        height: 276px;
     }
 
-    #p2{
-        top: 236px;
-    }
-
-    #p3{
-        top: 395px;
+    .__ProjectUniversity #p3 {
+        top: 373px;
     }
 
 }
