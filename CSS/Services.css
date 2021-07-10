@@ -1,0 +1,48 @@
+.Services{
+    width: 100vw;
+    background-color: transparent;
+    margin-top: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.containS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.Block-{
+    margin: 0 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    box-shadow: 0px 3px 12px -7px #9baaaa;
+}
+
+
+.Block- .symb{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.Block- .View{
+    cursor: pointer;
+}
+
+.Block- .tit, .Block- .View{
+    padding: 10px 20px;
+    
+}
+
+.Block- .tit{
+    font-size: 24px;
+}
