@@ -162,17 +162,27 @@
 
 
 .cGYg{
-    display: none;
+    position: fixed;
     justify-content: center;
     align-items: flex-start;
-
-    margin-top: 85px;
+    transform: translateX(-100%);
+    top: 56px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: hsl(var(--hue-color), 60%, 95%);
 }
 
-#afficheNavBar{
-    display: flex;
-    animation:1s animNB ;
+.afficheNavBar{
+    animation: animNB 1s forwards;
 }
+
+.hideNavBar{
+    animation: animNBHide 1s forwards;
+}
+
+
 
 .UL-navig-RWD{
     z-index: 10;
@@ -220,18 +230,26 @@
         transform: translateX(-100%);
     }
     to{
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
+
+@keyframes animNBHide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
 
 @media screen and (max-width: 664px) {
     .head-QLF button{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .mainQualification::before{
-        /*top: 138px;*/
     }
 
     .__Schoole .Hygfy:nth-child(2n+1){
@@ -360,72 +378,3 @@
     }
 
 }
-
-
-
-/* @media screen and (max-width: 449px) {
-    #p3 {
-        top: 278px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .mainQualification::before {
-        position: absolute;
-        top: 38px;
-        text-align: center;
-        content: '';
-        width: .5px;
-        background-color: #000;
-    }
-
-    .SI-complete{
-        display: none;
-    }
-    .BriefSI{
-        display: inline-flex;
-    }
-    
-}
-
-@media screen and (max-width: 366px) {
-    #p3 {
-        top: 299px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .mainQualification::before {
-        position: absolute;
-        top: 38px;
-        text-align: center;
-        content: '';
-        width: .5px;
-        background-color: #000;
-    }
-}
-
-
-
-@media screen and (max-width: 288px) {
-    #p3 {
-        top: 291px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .mainQualification::before {
-        position: absolute;
-        top: 38px;
-        text-align: center;
-        content: '';
-        width: .5px;
-        background-color: #000;
-    }
-
-    .Hygfy:nth-of-type(2n) {
-        margin-top: 90px;
-        margin-bottom: -2px;
-        align-items: flex-start;
-    }
-} */

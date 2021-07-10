@@ -50,9 +50,11 @@
     $('.fa-bars').on('click', function(){
         if(($('.cGYg').hasClass('afficheNavBar'))){
             $('.cGYg').removeClass('afficheNavBar')
+            $('.cGYg').addClass('hideNavBar')
         }
         else{
-            $('.cGYg').addClass('cGYg afficheNavBar')
+            $('.cGYg').addClass('afficheNavBar')
+            $('.cGYg').removeClass('hideNavBar')
         }
         
     })
