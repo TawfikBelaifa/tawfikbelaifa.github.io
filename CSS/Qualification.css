@@ -286,6 +286,22 @@
 
 }
 
+@media screen and (max-width: 620px) {
+    .Hygfy:nth-of-type(2n) {
+        
+        margin-bottom: -2px;
+
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .Hygfy:nth-of-type(2n) {
+        
+        margin-bottom: -16px;
+
+    }
+}
+
 @media screen and (max-width: 590px) {
     .mainQualification::before{
         top: 129px;
