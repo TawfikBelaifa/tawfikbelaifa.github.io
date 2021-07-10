@@ -58,4 +58,9 @@
         }
         
     })
+
+    $('.UL-navig-RWD a').on('click', function(){
+        $('.cGYg').removeClass('afficheNavBar')
+        $('.cGYg').addClass('hideNavBar')
+    })
 })
