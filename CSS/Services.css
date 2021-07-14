@@ -46,6 +46,74 @@
     font-size: 24px;
 }
 
+._front-end, ._sowftware{
+    display: none;
+    
+   
+}
+
+.containFE{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.L1{
+    display: flex;
+    padding: 10px 0;
+    
+}
+
+.vld{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    transform: translate(0, -10%);
+    margin-right: 10px;
+    background-color: lime;
+    position: relative;
+}
+
+.vld::before{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    content: '';
+    height: 10px;
+    width: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.exit{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.flexClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+
 @media screen and (max-width: 664px) {
     .containS{
         flex-direction: column;

@@ -63,4 +63,14 @@
         $('.cGYg').removeClass('afficheNavBar')
         $('.cGYg').addClass('hideNavBar')
     })
+
+    $('.View').on('click', function(){
+        FrontEnd = $(this).attr('data-PopupService')
+        $('._' + $(this).attr('data-PopupService')).addClass('_front-end flexClass')
+
+    })
+
+    $('.exit').on('click', function(){
+        $('._' + FrontEnd).toggleClass('flexClass')
+    })
 })
