@@ -66,7 +66,7 @@
 
     $('.View').on('click', function(){
         FrontEnd = $(this).attr('data-PopupService')
-        $('._' + $(this).attr('data-PopupService')).addClass('_front-end flexClass')
+        $('._' + $(this).attr('data-PopupService')).toggleClass('flexClass')
 
     })
 
