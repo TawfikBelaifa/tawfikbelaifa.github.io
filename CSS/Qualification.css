@@ -45,7 +45,10 @@
     grid-template-areas:
         "Part1 . ."
         ". Part2 ."
-        "Part3 . .";
+        "Part3 . ."
+        ". Part4 ."
+        "Part5 . ."
+        ;
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13px;
@@ -92,6 +95,20 @@
 
 }
 
+.Part4{
+    grid-area: Part4;
+
+    text-align: left;
+    padding: 20px;
+}
+
+.Part5{
+    grid-area: Part5;
+
+    text-align: right;
+    padding: 20px;
+}
+
 .Part1::before {
     content: '';
     height: 15px;
@@ -124,6 +141,29 @@
     transform: translate(-45%, 24%);
     border-radius: 50%;
 }
+
+.Part4::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%, 24%);
+    border-radius: 50%;
+}
+
+.Part5::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%, 24%);
+    border-radius: 50%;
+}
+
 .Hygfy{
     display: flex;
     flex-direction: column;
@@ -277,4 +317,3 @@
 
 }
 
-*
