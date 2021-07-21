@@ -22,8 +22,8 @@
           <li>Compétences</li>
         </a> <a href="#Services">
           <li>Services</li>
+        </a> <a href="#PortFolio"><li>PortFolio</li>
         </a>
-        <li>PortFolio</li>
         <li>Contact</li>
       </ul>
       <i class="fas fa-bars"></i>
@@ -113,7 +113,7 @@
         <div class="HYg"><a href="https://ensitech.eu/" target="_blank"> <img src="./LOGO/Logo20.gif" alt=""
               class="aswo"> </a></div>
         <img src="./LOGO/Logo-dev.gif" alt="" class="ensitech">
-        <img src="./LOGO/ASWO.gif" alt="" class="ensup">
+        <a href="https://www.aswo.com/" target="_blank"><img src="./LOGO/ASWO.gif" alt="" class="ensup"></a>
 
       </div>
       <div class="containText">
@@ -341,15 +341,14 @@
         </div>
       </div>
       <div class="titleAB">
-        <h1>Qualification</h1><span>My personal journey</span>
+        <h1>Qualification</h1><span>Mon parcours personnel</span>
       </div>
       <div class="mainQualification">
         <div class="head-QLF">
           <button class="Education Btn-PersonJ opacBtn" id="Schoole"><i class="fas fa-graduation-cap"></i>
             <span>Education</span></button>
-          <button class="Work Btn-PersonJ" id="Work"> <i class="fas fa-briefcase"></i> <span>Work</span></button>
-          <button class="Work Btn-PersonJ" id="ProjectUniversity"> <i class="fas fa-university"></i> <span>University
-              project</span></button>
+          <button class="Work Btn-PersonJ" id="Work"> <i class="fas fa-briefcase"></i> <span>Pro</span></button>
+          <button class="Work Btn-PersonJ" id="ProjectUniversity"> <i class="fas fa-university"></i> <span>Projet Universitaire</span></button>
         </div>
         <!-- Contenu Education -->
         <div class="Qlf-jrn afficheQualPart __Schoole" id="_Schoole">
@@ -509,10 +508,59 @@
     </div>
   </div>
 
+  <section class="PortFolio" id="PortFolio">
+    <div class="titleAB">
+      <h1>Portfolio</h1><span>Mes travaux</span>
+    </div>
+
+    <div id="app">
+      <Carroussel>
+          <Slidesc v-for="dataCarouss in dataCarouss"> 
+              <img  :src="'./LOGO/'+dataCarouss.name" alt="">
+              <div class="Juh">
+                  <h1>{{dataCarouss.title}}</h1>
+                  <span class="powred"> {{ dataCarouss.Whats }}</span>
+                  <div class="conatinBtn"><button class="btn-Juh">{{ dataCarouss.acces }}</button></div>
+              </div>
+          </Slidesc>
+      </Carroussel>
+    </div>
+  </section>
+
+   <!-- Composant Vue -->
+
+   <script type="text/x-template" id="carroussel">
+    <div>
+        <div class="carousse">
+            <i class="fas fa-chevron-left"  @click="prev" ></i>
+                <slot></slot>
+            <i class="fas fa-chevron-right" @click="suivant"></i>
+        </div>
+        <div class="contain-buls">
+            <span class="bulls" @click="SelectCarouss(n-1)" v-for="n in dataCaroussLength" :class="{actived: n-1 === index}"></span>
+        </div>
+    </div>
+        
+    </script>
+
+    <script type="text/x-template" id="sildes">
+        <div class="slid">
+            <transition :name="transition">
+                <div class="contain-slid" v-show="visible">
+                        <slot></slot>
+                </div>
+            </transition>
+        </div>
+    </script>
+
+
 
 
   <!-- Inculsion jQuery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Importation Vuejs ... -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
   <!-- Inclusion font-awsome for icon  -->
   <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
@@ -522,11 +570,9 @@
   <script src="./app.js"></script>
   <script src="./anm.js"></script>
 
+  <!-- Inculsion app Vue.js -->
+  <script src="./Vuejs/Vue.js"></script>
 
-
-  <script>
-
-  </script>
 
 </body>
 
