@@ -87,11 +87,13 @@ footer i {
 
 .contain-slid .powred {
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     margin-right: 10px;
-    color: darkgray;
+    color: #000;
     font-family: 'Poppins', sans-serif;
     padding: 20px 0;
+    font-weight: 300;
+
 }
 
 .Juh{
