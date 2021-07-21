@@ -73,6 +73,7 @@ footer i {
 .contain-slid{
     display: flex;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .contain-slid h1{
