@@ -31,7 +31,6 @@
     position: relative;
     overflow-x: hidden;
     margin-bottom: 30px;
-    padding-bottom: 20px;
     border-bottom: 1px solid lightgray;
     height: 445px;
 }
@@ -74,6 +73,7 @@ footer i {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+    height: 100%;
 }
 
 .contain-slid h1{
@@ -109,6 +109,7 @@ footer i {
 .slid{
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .btn-Juh{
@@ -145,6 +146,7 @@ footer i {
     margin: 0 1px;
     border-radius: 50%;
     cursor: pointer;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .actived{
