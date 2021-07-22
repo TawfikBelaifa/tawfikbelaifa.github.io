@@ -5,6 +5,9 @@
 @import url(./CSS/Qualification.css);
 @import url(./CSS/Services.css);
 @import url(./CSS/Portfolio.css);
+@import url(./CSS/Contact.css);
+@import url(./CSS/Footer.css);
+
 
 /* Import de font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');

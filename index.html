@@ -22,9 +22,11 @@
           <li>Compétences</li>
         </a> <a href="#Services">
           <li>Services</li>
-        </a> <a href="#PortFolio"><li>PortFolio</li>
+        </a> <a href="#PortFolio">
+          <li>PortFolio</li>
+        </a> <a href="#Contact">
+          <li>Contact</li>
         </a>
-        <li>Contact</li>
       </ul>
       <i class="fas fa-bars"></i>
     </nav>
@@ -41,8 +43,9 @@
         <li>Services</li>
       </a> <a href="#PortFolio">
         <li>PortFolio</li>
+      </a> <a href="#Contact">
+        <li>Contact</li>
       </a>
-      <li>Contact</li>
     </ul>
   </div>
   <section class="home" id="Home">
@@ -60,7 +63,7 @@
     </div>
 
     <div class="presention-prfl">
-      <div class="HI">Hi, Bienvenue</div>
+      <div class="HI">Bienvenue</div>
       <div class="post">Qui suis-je ?</div>
       <div class="text-Prsn">
         Un pur passionné de digital, je suis un adepte du développement web qui aime la création.
@@ -76,7 +79,9 @@
           <div class="front">
             <div class="front-contain">
               <div class="contain-Converture"></div>
-              <div class="profil-picture"><img src="./LOGO/logo.jpg" alt=""></div>
+              <div class="profil-picture">
+                <!-- <img src="./LOGO/logo.jpg" alt=""> -->
+              </div>
               <div class="Name">Tawfik BELAIFA</div>
               <div class="currently-job"> <i class="fas fa-briefcase"></i> Apprenti développeur JAVA - J2EE </div>
               <div class="at"><i class="fas fa-building"></i> ASWO</div>
@@ -133,7 +138,7 @@
             <h1>02+</h1><span>FrameWork</span>
           </div>
           <div class="langage">
-            <h1>08+</h1><span>Outils <br /> &&  <br />Logiciels</span>
+            <h1>08+</h1><span>Outils <br /> && <br />Logiciels</span>
           </div>
         </div>
         <a href="./CV----.pdf" download="CV.pdf">
@@ -185,7 +190,8 @@
             </div>
           </div>
           <div class="Yhul">
-            <div class="lang"><span>Java</span> <span class="textPrc"><span class="Puu__">En cours d'apprentissage chez ASWO </span>| 35%</span></div>
+            <div class="lang"><span>Java</span> <span class="textPrc"><span class="Puu__">En cours d'apprentissage chez
+                  ASWO </span>| 35%</span></div>
             <div class="Jauge">
               <div class="pourcent-java Uhkj"></div>
             </div>
@@ -335,7 +341,8 @@
             </div>
           </div>
           <div class="Yhul">
-            <div class="lang"><span>Jakarta EE</span> <span class="textPrc"><span class="Puu__">En cours d'apprentissage chez ASWO </span>| 30%</span></div>
+            <div class="lang"><span>Jakarta EE</span> <span class="textPrc"><span class="Puu__">En cours d'apprentissage
+                  chez ASWO </span>| 30%</span></div>
             <div class="Jauge">
               <div class="pourcent-c Uhkj"></div>
             </div>
@@ -350,7 +357,8 @@
           <button class="Education Btn-PersonJ opacBtn" id="Schoole"><i class="fas fa-graduation-cap"></i>
             <span>Education</span></button>
           <button class="Work Btn-PersonJ" id="Work"> <i class="fas fa-briefcase"></i> <span>Pro</span></button>
-          <button class="Work Btn-PersonJ" id="ProjectUniversity"> <i class="fas fa-university"></i> <span>Projet Universitaire</span></button>
+          <button class="Work Btn-PersonJ" id="ProjectUniversity"> <i class="fas fa-university"></i> <span>Projet
+              Universitaire</span></button>
         </div>
         <!-- Contenu Education -->
         <div class="Qlf-jrn afficheQualPart __Schoole" id="_Schoole">
@@ -517,21 +525,67 @@
 
     <div id="app">
       <Carroussel>
-          <Slidesc v-for="dataCarouss in dataCarouss"> 
-              <img  :src="'./LOGO/'+dataCarouss.name" alt="">
-              <div class="Juh">
-                  <h1>{{dataCarouss.title}}</h1>
-                  <span class="powred"> {{ dataCarouss.Whats }}</span>
-                  <div class="conatinBtn"><button class="btn-Juh">{{ dataCarouss.acces }}</button></div>
-              </div>
-          </Slidesc>
+        <Slidesc v-for="dataCarouss in dataCarouss">
+          <img :src="'./LOGO/'+dataCarouss.name" alt="">
+          <div class="Juh">
+            <h1>{{dataCarouss.title}}</h1>
+            <span class="powred"> {{ dataCarouss.Whats }}</span>
+            <div class="conatinBtn"><button class="btn-Juh">{{ dataCarouss.acces }}</button></div>
+          </div>
+        </Slidesc>
       </Carroussel>
     </div>
   </section>
 
-   <!-- Composant Vue -->
+  <section class="Contact" id="Contact">
+    <div class="titleAB">
+      <h1>Contact</h1><span>Moyens de contact</span>
+    </div>
+    <div class="containS">
+      <div class="Block-">
+        <div class="symb"><i class="fas fa-phone-alt"></i></div>
+        <div class="tit">Appelez-moi</div>
+        <div class="View" data-PopupService="front-end">07 85 18 83 76</div>
+      </div>
+      <div class="Block-">
+        <div class="symb"><i class="fas fa-envelope"></i></div>
+        <div class="tit">Mail</div>
+        <div class="View" data-PopupService="sowftware">Tawfik.professionnel@gmail.com</div>
+      </div>
+      <div class="Block-">
+        <div class="symb"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="tit">Localisation</div>
+        <div class="View" data-PopupService="AmoaPrf">95800 Cergy, France</div>
+      </div>
+    </div>
+  </section>
 
-   <script type="text/x-template" id="carroussel">
+  <section class="footer">
+    <div class="blc-1">
+      <div class="lft">
+        <div class="name">Tawfik</div>
+        <div class="job">Apprenti Developpeur Java - Java EE</div>
+      </div>
+      <div class="center">
+        <ul class="UHj">
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="rgt">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+    <div class="blc-2">
+      <div><i class="far fa-copyright"></i> Tawfik, Tous droits réservés</div>
+      <div class="LLki"><i class="fas fa-arrow-up"></i></div>
+    </div>
+  </section>
+  <!-- Composant Vue -->
+
+  <script type="text/x-template" id="carroussel">
     <div>
         <div class="carousse">
             <i class="fas fa-chevron-left"  @click="prev" ></i>
@@ -545,7 +599,7 @@
         
     </script>
 
-    <script type="text/x-template" id="sildes">
+  <script type="text/x-template" id="sildes">
         <div class="slid">
             <transition :name="transition">
                 <div class="contain-slid" v-show="visible">
@@ -561,8 +615,8 @@
   <!-- Inculsion jQuery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-    <!-- Importation Vuejs ... -->
-	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- Importation Vuejs ... -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
   <!-- Inclusion font-awsome for icon  -->
   <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
