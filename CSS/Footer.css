@@ -18,21 +18,15 @@
 }
 
 .blc-1 .center{
-    min-width: 300px;
+    width: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .blc-1 .name{
     font-size: 30px;
 }
-
-.blc-1 .center{
-    margin-top: 10px;
-}
-
-.blc-1 .rgt{
-    margin-top: 10px;
-}
-
 
 .UHj{
     display: flex;
@@ -40,7 +34,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 100%;
+    width: 70%;
 }
 
 .UHj li{
@@ -80,3 +74,20 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 664px) {
+    .footer{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .blc-1{
+        flex-direction: column;
+    }
+
+    .blc-1 .center{
+        width: auto;
+    }
+}
+
