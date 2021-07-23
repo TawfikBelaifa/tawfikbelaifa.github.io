@@ -54,25 +54,47 @@
     font-weight: 100;
     margin-bottom: 20px;
     position: relative;
-    color: darkgray;
 }
 
 .blc-2 i{
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .LLki{
     position: absolute;
-    right: 10px;
-    bottom: 0px;
-    height: 25px;
-    width: 25px;
+    right: 50px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.LLki a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.LLki:hover{
+    opacity: .8;
+    color: #fff;
+}
+
+.rgt i:hover{
+    opacity: .5;
+}
+
+.UHj li:hover{
+    opacity: .5;
+}
+
+.LLki i{
+    color: #000;
 }
 
 @media screen and (max-width: 664px) {
@@ -90,8 +112,15 @@
         width: auto;
     }
 
-    *{
-        padding: 0;
+    .blc-2 i{
+        font-size: 12px;
+    }
+    
+    .LLki{
+        right: 10px;
+        bottom: 0px;
+        height: 25px;
+        width: 25px;
     }
 }
 

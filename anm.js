@@ -15,6 +15,14 @@
             }, 750)       
         })
 
+        $('.LLki a').click(function(e){
+            e.preventDefault();
+            $id = $(this).attr('href');
+            $('body,html').animate({
+            scrollTop: $($id).offset().top - $('body').height()
+            }, 750)       
+        })
+
     
 
    $('.title-LS').on('click', function(){
