@@ -71,10 +71,10 @@ const Vm = new Vue({
     },
     data: {
         dataCarouss: [
-            { name: 'ssnet.gif', title : 'Student social network', acces:"Code à venir sur GitHub",Whats: "Student social network est réseau social étudiant équivalent à instagram. Conçu dans le but de facilité la communication entre les étudiants et les enseigants ..."},
+            { name: 'ssnet.gif', title : 'Student social network', acces:"Code à venir sur GitHub",Whats: "Student social network est réseau social étudiant équivalent à instagram. Conçu dans le but de faciliter la communication entre les étudiants et les enseigants ..."},
             { name: 'shareMy.gif', title : 'ShareMyHouse', acces:"Code à venir sur GitHub", Whats: "ShareMyHouse est un site web équivalent à airBnb permettant la réservation de logement de particulier avec une messagerie mise en place pour permettre l'échange entre le particulier et la personne intéressée ..."},
             { name: 'shoes.gif', title : 'YourSneakers', acces:"Site à venir", Whats: "YourSneakers est un site e-commerce dédié à l'achat de chausssure de luxe en ligne, avec un systeme de panier permettant de voir l'évolution de nos achats et leurs actualisations."},
-            { name: 'JO.gif', title : 'JO Tokyo 2020', acces:"Code à venir sur GitHub", Whats: "JO Tokyo 2020 est projet Universitaire proposé par l'université de picardie Jules Vers dans lequel il nous est demandé de mettre en place une base de donnée qui servira à l'organisation des prochains jeux olympiques. Cette organisation regroupe la gestion des épreuves et la gestion des personnes au quel j'ai eu le plaisir de participer à la conception et à l'implémentaion de cette dernière"}
+            { name: 'JO.gif', title : 'JO Tokyo 2020', acces:"Code à venir sur GitHub", Whats: "JO Tokyo 2020 est projet Universitaire proposé par l'université de picardie Jules Verne dans lequel il nous est demandé de mettre en place une base de donnée qui servira à l'organisation des prochains jeux olympiques. Cette organisation regroupe la gestion des épreuves et la gestion des personnes, au quel j'ai eu le plaisir de participer à la conception et à l'implémentaion de cette dernière"}
             
         ],
     },
