@@ -228,17 +228,14 @@ header{
 }
 
 .contain-Converture2{
-    background-image: linear-gradient( 
-        180deg
-         ,transparent 0,rgba(0,0,0,.2) 8%,rgba(0,0,0,.5) 21%,rgba(0,0,0,.61) 78%,rgba(0,0,0,.8) 95%,rgba(0,0,0,.8)), url(../LOGO/Udemy-Logo.png);
+    background-image: url(../LOGO/Udemy-Logo.png);
             width: 92.8%;
             height: 316px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            clip-path: polygon(0 0, 100% 0%, 100% 55%, 0 100%);
             position: relative;
-            color: #fff;
+            color: #000;
             margin-top: -9px;
             width: 278px;
 }
